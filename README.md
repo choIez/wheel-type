@@ -1,3 +1,5 @@
 # Vehicle type identification
-算法：高斯滤波、Canny边缘检测、椭圆拟合
-前端：Flask、CSS3
+### 算法设计
+高斯滤波、Canny边缘检测、椭圆拟合
+### 软件设计
+Flask、CSS3
