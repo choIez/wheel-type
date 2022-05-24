@@ -33,7 +33,7 @@ def getcircle(path):
         print(e)
 
 
-p = r'E:\axle\imgs/'
+p = r'img'
 for file in os.listdir(p):
     print(p + file)
     getcircle(os.path.join(p, file))
