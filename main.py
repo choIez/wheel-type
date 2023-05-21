@@ -27,7 +27,6 @@ def getcircle(path):
     try:
         cnt, hierarchy = cv2.findContours(edges, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
         for i in range(len(cnt)):
-
             if cnt[i].shape[0] > 5:
 
                 ellipse = cv2.fitEllipse(cnt[i])  # [(椭圆中心点x, 椭圆中心点y), (椭圆短轴a, 椭圆长轴b), 中心旋转角度angle]
