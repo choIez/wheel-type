@@ -15,7 +15,6 @@ def getcircle(path):
     try:
         cnt, hierarchy = cv2.findContours(edges, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
         for i in range(len(cnt)):
-
             if cnt[i].shape[0] > 5:
 
                 ellipse = cv2.fitEllipse(cnt[i])
@@ -29,6 +28,7 @@ def getcircle(path):
         cv2.imshow('circle', img)
         cv2.waitKey(0)
         cv2.destroyWindow('circle')
+        
     except Exception as e:
         print(e)
 
